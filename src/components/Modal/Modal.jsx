@@ -10,7 +10,9 @@ const Modal = ({ escFunction, src, handleOverlayClick }) => {
     return () => {
       document.removeEventListener('keydown', escFunction);
       const overlay = document.querySelector('.overlay');
-      // overlay.removeEventListener('click', handleOverlayClick);
+      if (overlay) {
+        overlay.removeEventListener('click', handleOverlayClick);
+      }
     };
   }, []);
 
@@ -27,6 +29,7 @@ Modal.propTypes = {
   escFunction: PropTypes.func,
   src: PropTypes.string,
   alt: PropTypes.string,
+  handleOverlayClick: PropTypes.func,
 };
 
 export default Modal;
