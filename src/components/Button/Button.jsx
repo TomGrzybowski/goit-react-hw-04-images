@@ -8,8 +8,8 @@ const Button = ({ handleLoadMore }) => {
   );
 };
 
-export default Button;
-
 Button.propTypes = {
   handleLoadMore: PropTypes.func,
 };
+
+export default Button;

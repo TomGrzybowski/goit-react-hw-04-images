@@ -9,7 +9,6 @@ const ImageGallery = ({ galleryItems = [], handleImageClick }) => {
           key={image.id}
           id={image.id}
           src={image.webformatURL}
-          alt={image.tags}
         />
       ))}
     </ul>
