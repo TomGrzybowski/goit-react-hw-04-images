@@ -10,7 +10,7 @@ const Modal = ({ escFunction, src, handleOverlayClick }) => {
     return () => {
       document.removeEventListener('keydown', escFunction);
       const overlay = document.querySelector('.overlay');
-      overlay.removeEventListener('click', handleOverlayClick);
+      // overlay.removeEventListener('click', handleOverlayClick);
     };
   }, []);
 
