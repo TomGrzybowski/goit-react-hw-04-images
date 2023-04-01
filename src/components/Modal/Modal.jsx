@@ -1,4 +1,4 @@
-import { Component, useEffect } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const Modal = ({ escFunction, src, alt, handleOverlayClick }) => {
