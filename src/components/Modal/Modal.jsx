@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const Modal = ({ escFunction, src, alt, handleOverlayClick }) => {
+const Modal = ({ escFunction, src, handleOverlayClick }) => {
   useEffect(() => {
     document.addEventListener('keydown', escFunction);
     const overlay = document.querySelector('.overlay');
@@ -17,7 +17,7 @@ const Modal = ({ escFunction, src, alt, handleOverlayClick }) => {
   return (
     <div className="overlay">
       <div className="modal">
-        <img src={src} alt={alt} />
+        <img src={src} />
       </div>
     </div>
   );

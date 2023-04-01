@@ -14,7 +14,6 @@ const App = () => {
   const [currentInput, setCurrentInput] = useState('');
   const [isModalShown, setIsModalShown] = useState(false);
   const [modalImageSource, setModalImageSource] = useState('');
-  const [modalAlt, setModalAlt] = useState('');
 
   const fetchPictures = async url => {
     const pictures = await fetch(url);
@@ -85,7 +84,6 @@ const App = () => {
       {isModalShown ? (
         <Modal
           src={modalImageSource}
-          alt={modalAlt}
           handleOverlayClick={handleOverlayClick}
           escFunction={escFunction}
         />
