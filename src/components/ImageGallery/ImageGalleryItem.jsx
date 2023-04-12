@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const ImageGalleryItem = ({ src, id }) => {
   return (
     <li>
-      <img src={src} id={id}></img>
+      <img src={src} id={id} alt=""></img>
     </li>
   );
 };

@@ -14,12 +14,12 @@ const Modal = ({ escFunction, src, handleOverlayClick }) => {
         overlay.removeEventListener('click', handleOverlayClick);
       }
     };
-  }, []);
+  }, [escFunction, handleOverlayClick]);
 
   return (
     <div className="overlay">
       <div className="modal">
-        <img src={src} />
+        <img src={src} alt="" />
       </div>
     </div>
   );
