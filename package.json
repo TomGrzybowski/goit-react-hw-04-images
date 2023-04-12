@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-04-image-finder",
+  "name": "goit-react-hw-04-images",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TomGrzybowski.github.io/goit-react-hw-04-image-finder/",
+  "homepage": "https://TomGrzybowski.github.io/goit-react-hw-04-images/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
